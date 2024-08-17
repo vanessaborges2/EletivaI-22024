@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>hoje é dia <?php echo date("d/m/Y"); ?></h1>
+    <form action="Aula1/resposta.php" method="POST">
+        <input type="text" name="valor" />
+        <button type="submit">Enviar</button>
+    </form>
+
 </body>
 </html>
