@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($usuarios as $usuario): ?>
+            
             <tr>
                 <td>1</td>
                 <td>Usuario</td>
@@ -27,7 +27,7 @@
                     <a href="excluir_usuario.php" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
-            <?php endforeach; ?>
+            
         </tbody>
     </table>
 </div>

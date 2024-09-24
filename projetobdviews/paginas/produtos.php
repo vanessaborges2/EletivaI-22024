@@ -19,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($produtos as $produto): ?>
+            
             <tr>
                 <td>1</td>
                 <td>Tênis</td>
@@ -32,7 +32,7 @@
                     <a href="excluir_produto.php" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
-            <?php endforeach; ?>
+            
         </tbody>
     </table>
 </div>
