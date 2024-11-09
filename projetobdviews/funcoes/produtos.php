@@ -4,6 +4,18 @@
 
     require_once '../config/bancodedados.php';
 
+    function gerarDadosGrafico(): array {
+        global $pdo;
+        $stmt = $pdo->query("SELECT 
+                                p.id,
+                                p.nome,
+                                SUM(c.quantidade) as estoque 
+                            FROM compra c
+                            INNER JOIN produto p ON p.id = c.produto_id
+                            GROUP BY p.id");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     function buscarProdutos(): array {
         global $pdo;
         $stmt = $pdo->query("SELECT p.*, c.nome as nome_categoria FROM produto p 
